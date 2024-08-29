@@ -10,19 +10,64 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    body {
+        background-color: hsl(212, 45%, 89%);
+        margin: 0; /* Remove default margins */
+        height: 100vh; /* Full viewport height */
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;
+    }
+    .container {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 25px;
+        height: 400px;
+        width: 275px; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .qrCode img {
+        max-width: 100%;
+        max-height: 250px; /* Limit height to prevent overflow */
+        object-fit: contain;
+        margin-top: 0px;
+        margin-bottom: 15px;
+        border-radius: 25px;
+    }
+    .caption {
+        font-size: 15px; /* Adjust as needed */
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+        font-weight: 200;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .attribution {
+      font-size: 15px; /* Adjust as needed */
+        text-align: center;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        margin-bottom: 10px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+</style>
 </head>
+<div class="container">
 <body>
-
-  Improve your front-end skills by building projects
+  <div class ="qrCode">
+  <img src="./images/image-qr-code.png" alt="QR code" >
+</div>
+<div class="attribution">
+  Improve your front-end skills by building projects.
+</div>
+<div class = "caption">
 
   Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+</div>
 </body>
+</div>
 </html>
